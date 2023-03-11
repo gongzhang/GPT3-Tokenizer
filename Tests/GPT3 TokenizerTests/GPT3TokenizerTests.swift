@@ -1,5 +1,5 @@
 import XCTest
-@testable import GPT3_Tokenizer
+@testable import GPT3Tokenizer
 
 final class GPT3TokenizerTests: XCTestCase {
     private var sut: GPT3Tokenizer!

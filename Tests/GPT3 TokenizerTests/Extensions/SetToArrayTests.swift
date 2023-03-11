@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import GPT3_Tokenizer
+@testable import GPT3Tokenizer
 
 final class SetToArrayTests: XCTestCase {
     func testGivenSetWhenToArrayThenMatch() throws {

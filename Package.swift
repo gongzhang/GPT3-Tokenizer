@@ -9,8 +9,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "GPT3 Tokenizer",
-            targets: ["GPT3 Tokenizer"]),
+            name: "GPT3Tokenizer",
+            targets: ["GPT3Tokenizer"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,13 +20,15 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "GPT3 Tokenizer",
+            name: "GPT3Tokenizer",
             dependencies: [],
+            path: "Sources/GPT3 Tokenizer",
             resources: [
                 .process("Resources")
             ]),
         .testTarget(
-            name: "GPT3 TokenizerTests",
-            dependencies: ["GPT3 Tokenizer"]),
+            name: "GPT3TokenizerTests",
+            dependencies: ["GPT3Tokenizer"],
+            path: "Tests/GPT3 TokenizerTests"),
     ]
 )

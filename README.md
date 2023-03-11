@@ -15,7 +15,7 @@ https://github.com/aespinilla/GPT3-Tokenizer.git
 ## Usage
 
 ```swift
-import GPT3_Tokenizer
+import GPT3Tokenizer
 
 let gpt3Tokenizer = GPT3Tokenizer()
 
